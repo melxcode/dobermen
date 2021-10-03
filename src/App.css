@@ -5,11 +5,13 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-bottom: 150px;
+  margin-top: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 15s linear;
   }
 }
 
@@ -28,11 +30,33 @@
   color: #61dafb;
 }
 
+.social {
+  position: absolute;
+  top: 1186px;
+  left: 575px;
+  width: 230px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-mobile {
+  position: absolute;
+  top: 644px;
+  left: 174px;
+  width: 112px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-img {
+  cursor: pointer;
+}
+
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotateY(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
   }
 }
